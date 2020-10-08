@@ -1,8 +1,8 @@
 html {
   background-image: url("https://images.hdqwalls.com/download/berserk-aj-2048x1152.jpg");
-  background-size: contain;
-  background-position: absolute;
-  background-repeat: none;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 .title {
