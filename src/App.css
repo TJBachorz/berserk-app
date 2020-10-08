@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
+html {
+  background-image: url("https://images.hdqwalls.com/download/berserk-aj-2048x1152.jpg");
+  background-size: contain;
+  background-position: absolute;
+  background-repeat: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title {
+  color: beige;
+  font-weight: 800;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.search-bar-container {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar-container > input {
+  border-radius: 15px;
+  height: 25px;
+  width: 225px;
+}
+
+h1 {
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  display: flex;
 }
 
-.App-link {
-  color: #61dafb;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-container {
+  display: grid;
+  grid-template-columns: 250px 250px 250px 250px 250px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.char-name {
+  color: beige;
+  cursor: pointer;
 }
