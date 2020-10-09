@@ -1,26 +1,21 @@
-import React from 'react'
-
-export default class Card extends React.Component {
-
+import React, { Component } from 'react'
+export default class Card extends Component {
     state = {
         isActive: false
     }
-
-    toggleActive = () => {this.setState({isActive: !this.state.isActive})}
-
+    toggleActive = () => {
+        this.setState({ isActive: !this.state.isActive });
+    }
     render() {
-        const {name, image_url, mal_id} = this.props.character
+        const { name, image_url } = this.props.character
+        const { isActive } = this.state;
         return (
-            <div key={mal_id} className="card" >
+            <div className="card">
                 <h2 className="char-name" onClick={this.toggleActive}>{name}</h2>
-                {
-                    this.state.isActive ?
-                        <img src={image_url} alt={`A picture of ${name}`}/>
-                    : null
-                }
-                {
-                    name === "Guts" && this.state.isActive ? 
-                        <p className="test">What a fucking bro!</p>
+                { isActive && <img src={ image_url } alt={ name } /> }
+                { null || false }
+                { name === "Guts" && isActive ?
+                    <p className="test">What a fucking bro!</p>
                     : null
                 }
             </div>
