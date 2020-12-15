@@ -13,7 +13,7 @@ export default class Card extends Component {
             <div className="card">
                 <h2 className="char-name" onClick={this.toggleActive}>{name}</h2>
                 { isActive && <img src={ image_url } alt={ name } /> }
-                { null || false }
+                {/* { null || false } */}
                 { name === "Guts" && isActive ?
                     <p className="test">What a fucking bro!</p>
                     : null
